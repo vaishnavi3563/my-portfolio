@@ -7,7 +7,7 @@ const projects = [
     desc: "KFC website clone built with Bootstrap & JS.",
     tech: "HTML, CSS, JS, Bootstrap",
     link: "myProjects/Kfc_clone/index.html",
-    github: "https://github.com/vaishnavi3563/KFC-clone"
+    githu: "https://github.com/vaishnavi3563/Kfc-Clone"
   },
   {
     name: "Weather App",
@@ -15,16 +15,16 @@ const projects = [
     desc: "Weather forecast app using API.",
     tech: "HTML, CSS, JS",
     link: "myProjects/WeatherApp/index.html",
-    github: "https://github.com/vaishnavi3563/WeatherApp"
+    github: "https://github.com/vaishnavi3563/Weather-App"
   },
-  {
-    name: "TODO List",
-    img: "images/todo-img.png",
-    desc: "Task management app with local storage.",
-    tech: "HTML, CSS, JS",
-    link: "myProjects/TODO-List/index.html",
-    github: "https://github.com/vaishnavi3563/TO-DO-List"
-  },
+  // {
+  //   name: "TODO List",
+  //   img: "images/todo-img.png",
+  //   desc: "Task management app with local storage.",
+  //   tech: "HTML, CSS, JS",
+  //   link: "myProjects/TODO-List/index.html",
+  //   github: "https://github.com/vaishnavi3563/TO-DO-List"
+  // },
   {
     name: "TicTocToe Game",
     img: "images/game-img.png",
