@@ -1,0 +1,37 @@
+*{
+    background-image: url("https://img.freepik.com/free-vector/stationery-realistic-composition-with-isolated-image-calculator-blank-background-vector-illustration_1284-65975.jpg?ga=GA1.1.1541756095.1745651827&semt=ais_hybrid&w=740s");
+}
+h3{
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 10px 10px 1px black;
+}
+ul {
+    width: 300px;
+    height: 450px;
+    border: 2px solid white;
+    margin: 10px auto;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: lightslategray;
+    border-radius: 30px;
+    box-shadow: 20px 10px 10px;
+}
+li  {
+    list-style: none;
+    border: 2px solid gold;
+    background-color: #ccc;
+    margin: 20px;
+    padding: 10px;
+}
+.valueBar{
+    text-align: center; 
+    width: 130px;
+    height: 180px;
+    margin: auto;
+}
+#resultBlock {
+    display: none;
+}

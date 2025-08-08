@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Document</title>
+         <link rel="stylesheet" href="app.css">
+     </head>
+     <body>
+        <h3>Numbers Calculator</h3>
+     <ul>
+         <li>
+             <!-- enter first value : -->
+             <input placeholder="enter first Value :" type="text" id="firstVal" onkeypress = "return validateTextContent(event)">
+         </li>
+         <li>
+             <!-- enter second value : -->
+             <input  placeholder="enter second Value :" type="text" id="secondVal" onkeypress = "return validateTextContent(event)">
+         </li>
+         <li class="valueBar">
+            <input type="button" value="+" onclick="doTheSum(event)"><br>
+            <br>
+            <input type="button" value="-" onclick="doTheSub(event)"><br>    
+            <br>      
+            <input type="button" value="*" onclick="doTheMul(event)"><br>
+            <br>
+            <input type="button" value="/" onclick="doTheDiv(event)"><br>
+            <br>
+            <input type="button" value="%" onclick="doTheModu(event)"><br>
+         </li>
+         <li id="resultBlock">
+            <span> .....</span>
+         </li>
+     </ul>
+     <script>
+         var doTheSum = (event) => {
+             console.log(event);
+             var firstValue = document.querySelector("#firstVal").value;
+             firstValue = parseInt(firstValue);
+             var secondValue = document.querySelector("#secondVal").value;
+             secondValue = parseInt(secondValue);
+             var result = firstValue + secondValue;
+             document.querySelector('span').innerText = 'sum is : ' + result;
+             document.querySelector('#resultBlock').style.display = 'block';
+         }
+         var doTheSub = (event) => {
+             console.log(event);
+             var firstValue = document.querySelector("#firstVal").value;
+             firstValue = parseInt(firstValue);
+             var secondValue = document.querySelector("#secondVal").value;
+             secondValue = parseInt(secondValue);
+             var result = firstValue - secondValue;
+             document.querySelector('span').innerText = 'substraction is : ' + result;
+             document.querySelector('#resultBlock').style.display = 'block';
+         }
+         var doTheMul = (event) => {
+             console.log(event);
+             var firstValue = document.querySelector("#firstVal").value;
+             firstValue = parseInt(firstValue);
+             var secondValue = document.querySelector("#secondVal").value;
+             secondValue = parseInt(secondValue);
+             var result = firstValue * secondValue;
+             document.querySelector('span').innerText = 'multiplication is : ' +result;
+             document.querySelector('#resultBlock').style.display = 'block';
+         }
+         var doTheDiv = (event) => {
+             console.log(event);
+             var firstValue = document.querySelector("#firstVal").value;
+             firstValue = parseInt(firstValue);
+             var secondValue = document.querySelector("#secondVal").value;
+             secondValue = parseInt(secondValue);
+             var result = firstValue / secondValue;
+             document.querySelector('span').innerText = 'division is : ' + result;
+             document.querySelector('#resultBlock').style.display = 'block';
+         }
+         var doTheModu = (event) => {
+             console.log(event);
+             var firstValue = document.querySelector("#firstVal").value;
+             firstValue = parseInt(firstValue);
+             var secondValue = document.querySelector("#secondVal").value;
+             secondValue = parseInt(secondValue);
+             var result = firstValue % secondValue;
+             document.querySelector('span').innerText = 'module is : ' + result;
+             document.querySelector('#resultBlock').style.display = 'block';
+         }
+         var validateTextContent = (event) => {
+            console.log(event);
+            if(event.keyCode >= 48 && event.keyCode <= 57){
+                return true;
+            }else{
+                return false;
+            }
+         }
+      </script>
+  </body>
+</html>

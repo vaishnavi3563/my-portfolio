@@ -1,0 +1,14 @@
+body { scroll-behavior: smooth; font-family: Arial, sans-serif; }
+#home img { border: 4px solid #0d6efd; transition: 0.3s; }
+#home img:hover { transform: scale(1.05); }
+#about { background: #f9f9f9; }
+#about img { border: 4px solid #0d6efd; transition: transform 0.3s; }
+#about img:hover { transform: scale(1.05); }
+#skills-list span {
+  display: inline-block; margin: 5px; padding: 8px 15px;
+  background: #0d6efd; color: white; border-radius: 20px;
+  font-weight: bold; transition: 0.3s;
+}
+#skills-list span:hover { background: #0056b3; }
+.card { transition: transform 0.2s; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
