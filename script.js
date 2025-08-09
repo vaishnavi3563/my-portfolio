@@ -7,7 +7,7 @@ const projects = [
     desc: "KFC website clone built with Bootstrap & JS.",
     tech: "HTML, CSS, JS, Bootstrap",
     link: "myProjects/Kfc_clone/index.html",
-    githu: "https://github.com/vaishnavi3563/Kfc-Clone"
+    github: "https://github.com/vaishnavi3563/Kfc-Clone"
   },
   {
     name: "Weather App",
@@ -21,7 +21,7 @@ const projects = [
   //   name: "TODO List",
   //   img: "images/todo-img.png",
   //   desc: "Task management app with local storage.",
-  //   tech: "HTML, CSS, JS",
+  //   tech: "HTML, CSS, Bootstrap, JS, NodeJs, ExpressJs, Mongodb",
   //   link: "myProjects/TODO-List/index.html",
   //   github: "https://github.com/vaishnavi3563/TO-DO-List"
   // },
@@ -46,22 +46,41 @@ const projects = [
 const skills = ["HTML", "CSS", "JavaScript", "Bootstrap", "React", "Node.js", "Express", "MongoDB", "GitHub"];
 
 // Render Projects
-const projectList = document.getElementById("project-list");
-projects.forEach(p => {
-  projectList.innerHTML += `
-    <div class="col-md-4 mb-3">
-      <div class="card shadow-sm">
-        <img src="${p.img}" class="card-img-top" alt="${p.name}">
-        <div class="card-body">
-          <h5 class="card-title">${p.name}</h5>
-          <p class="card-text">${p.desc}</p>
-          <p><strong>Tech:</strong> ${p.tech}</p>
-          <a href="${p.link}" class="btn btn-primary btn-sm">Live Demo</a>
-        </div>
-      </div>
-    </div>
-  `;
-});
+// const projectList = document.getElementById("project-list");
+// projects.forEach(p => {
+//   projectList.innerHTML += `
+//     <div class="col-md-4 mb-3">
+//       <div class="card shadow-sm">
+//         <img src="${p.img}" class="card-img-top" alt="${p.name}">
+//         <div class="card-body">
+//           <h5 class="card-title">${p.name}</h5>
+//           <p class="card-text">${p.desc}</p>
+//           <p><strong>Tech:</strong> ${p.tech}</p>
+//           <a href="${p.link}" class="btn btn-primary btn-sm">Live Demo</a>
+//         </div>
+//       </div>
+//     </div>
+//   `;
+// });
+
+// Render Projects
+     const projectList = document.getElementById("project-list");
+     projects.forEach(p => {
+       projectList.innerHTML += `
+         <div class="col-md-4 mb-3">
+           <div class="card shadow-sm">
+             <img src="${p.img}" class="card-img-top" alt="${p.name}">
+             <div class="card-body">
+               <h5 class="card-title">${p.name}</h5>
+               <p class="card-text">${p.desc}</p>
+               <p><strong>Tech:</strong> ${p.tech}</p>
+               <a href="${p.link}" target="_blank" class="btn btn-danger btn-sm me-2">Live Demo</a>
+               ${p.github ? `<a href="${p.github}" target="_blank" class="btn btn-primary btn-sm">GitHub</a>` : ""}
+             </div>
+           </div>
+         </div>
+       `;
+     });
 
 // Render Skills
 const skillsList = document.getElementById("skills-list");
